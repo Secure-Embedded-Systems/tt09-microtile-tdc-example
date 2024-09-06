@@ -65,6 +65,32 @@ of 7SEG font states at the output.
 
 None, just the standard Tiny Tapeout PCB.
 
+## Project 2 - One Pixel DVD Logo Screensaver
+* Repo: [https://github.com/SagarDevAchar/tt08-one-pixel-dvd](https://github.com/SagarDevAchar/tt08-one-pixel-dvd)
+* Author: Sagar Dev Achar
+* Description: Just a bouncing square rendered on VGA (shoutout to the OG DVD Logo!)
+
+## How it works
+
+- Uses the [HVSync Generator from TinyTapeout](https://github.com/SagarDevAchar/vga-playground/blob/main/src/examples/common/hvsync_generator.v)
+- Keeps track of pixel position and directions and flips them when necessary
+- Smart idea by RebelMike to divide the Horizontal Timing by 16 to save the number of flops used!
+
+## External hardware
+
+- [Leo's TinyVGA Pmod](https://github.com/mole99/tiny-vga) connected to OUTPUT terminal (`uo_out`)
+- Some switches to the INPUT terminal (`ui_in`)
+
+## How to test
+
+- Connect the necessary peripherals
+- Provide a **1.5625MHz** clock to the top module `tt_um_micro_one_pixel_dvd_sda`
+- Set input bits 7 and 6 to choose the starting direction of movement
+- Reset the design
+- Enjoy the show (well there isn't much to enjoy :P)
+- Tweak the inputs to change your colours!
+
+
 ## Project 3 - NCO
 * Repo: https://github.com/gfg-development/tt-micro-tiles-nco
 * Author: Gerrit Grutzeck
