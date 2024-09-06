@@ -1,4 +1,4 @@
-module tt_um_micro_proj4 (clk,
+module tt_um_micro_stub_4 (clk,
     rst_n,
     VPWR,
     VGND,

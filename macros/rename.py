@@ -17,11 +17,11 @@ top_cell = KLAYOUT.top_cell()
 assert top_cell.name == "tt_um_micro_test"
 
 for i in range(2, 5):
-    top_cell.name = f"tt_um_micro_proj{i}"
-    KLAYOUT.write(f"tt_um_micro_proj{i}.gds")
+    top_cell.name = f"tt_um_micro_stub_{i}"
+    KLAYOUT.write(f"tt_um_micro_stub_{i}.gds")
 
-    with open(f"tt_um_micro_proj{i}.lef", "w") as f:
-        f.write(lef_data.replace("tt_um_micro_test", f"tt_um_micro_proj{i}"))
+    with open(f"tt_um_micro_stub_{i}.lef", "w") as f:
+        f.write(lef_data.replace("tt_um_micro_test", f"tt_um_micro_stub_{i}"))
 
-    with open(f"tt_um_micro_proj{i}.v", "w") as f:
-        f.write(verilog_data.replace("tt_um_micro_test", f"tt_um_micro_proj{i}"))
+    with open(f"tt_um_micro_stub_{i}.v", "w") as f:
+        f.write(verilog_data.replace("tt_um_micro_test", f"tt_um_micro_stub_{i}"))

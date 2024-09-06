@@ -59,38 +59,38 @@
       "lef": ["dir::../macros/tt_um_micro_test.lef"],
       "nl": ["dir::../macros/tt_um_micro_test.v"]
     },
-    "tt_um_micro_proj2": {
+    "tt_um_micro_stub_2": {
       "instances": {
         "proj2": {
           "location": [86.6, 0],
           "orientation": "FN"
         }
       },
-      "gds": ["dir::../macros/tt_um_micro_proj2.gds"],
-      "lef": ["dir::../macros/tt_um_micro_proj2.lef"],
-      "nl": ["dir::../macros/tt_um_micro_proj2.v"]
+      "gds": ["dir::../macros/tt_um_micro_stub_2.gds"],
+      "lef": ["dir::../macros/tt_um_micro_stub_2.lef"],
+      "nl": ["dir::../macros/tt_um_micro_stub_2.v"]
     },
-    "tt_um_micro_proj3": {
+    "tt_um_micro_stub_3": {
       "instances": {
         "proj3": {
           "location": [0, 52],
           "orientation": "N"
         }
       },
-      "gds": ["dir::../macros/tt_um_micro_proj3.gds"],
-      "lef": ["dir::../macros/tt_um_micro_proj3.lef"],
-      "nl": ["dir::../macros/tt_um_micro_proj3.v"]
+      "gds": ["dir::../macros/tt_um_micro_stub_3.gds"],
+      "lef": ["dir::../macros/tt_um_micro_stub_3.lef"],
+      "nl": ["dir::../macros/tt_um_micro_stub_3.v"]
     },
-    "tt_um_micro_proj4": {
+    "tt_um_micro_stub_4": {
       "instances": {
         "proj4": {
           "location": [86.6, 52],
           "orientation": "FN"
         }
       },
-      "gds": ["dir::../macros/tt_um_micro_proj4.gds"],
-      "lef": ["dir::../macros/tt_um_micro_proj4.lef"],
-      "nl": ["dir::../macros/tt_um_micro_proj4.v"]
+      "gds": ["dir::../macros/tt_um_micro_stub_4.gds"],
+      "lef": ["dir::../macros/tt_um_micro_stub_4.lef"],
+      "nl": ["dir::../macros/tt_um_micro_stub_4.v"]
     }
   },
 
