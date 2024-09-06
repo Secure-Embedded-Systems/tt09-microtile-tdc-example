@@ -59,16 +59,16 @@
       "lef": ["dir::../macros/tt_um_micro_test.lef"],
       "nl": ["dir::../macros/tt_um_micro_test.v"]
     },
-    "tt_um_micro_stub_2": {
+    "tt_um_wokwi_408272151035187201": {
       "instances": {
         "proj2": {
           "location": [86.6, 0],
           "orientation": "FN"
         }
       },
-      "gds": ["dir::../macros/tt_um_micro_stub_2.gds"],
-      "lef": ["dir::../macros/tt_um_micro_stub_2.lef"],
-      "nl": ["dir::../macros/tt_um_micro_stub_2.v"]
+      "gds": ["dir::../macros/tt_um_wokwi_408272151035187201.gds"],
+      "lef": ["dir::../macros/tt_um_wokwi_408272151035187201.lef"],
+      "nl": ["dir::../macros/tt_um_wokwi_408272151035187201.v"]
     },
     "tt_um_micro_stub_3": {
       "instances": {
