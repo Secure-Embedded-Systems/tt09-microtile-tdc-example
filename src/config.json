@@ -70,16 +70,16 @@
       "lef": ["dir::../macros/tt_um_wokwi_408272151035187201.lef"],
       "nl": ["dir::../macros/tt_um_wokwi_408272151035187201.v"]
     },
-    "tt_um_micro_stub_3": {
+    "tt_um_micro_gfg_development_nco": {
       "instances": {
         "proj3": {
           "location": [0, 52],
           "orientation": "N"
         }
       },
-      "gds": ["dir::../macros/tt_um_micro_stub_3.gds"],
-      "lef": ["dir::../macros/tt_um_micro_stub_3.lef"],
-      "nl": ["dir::../macros/tt_um_micro_stub_3.v"]
+      "gds": ["dir::../macros/tt_um_micro_gfg_development_nco.gds"],
+      "lef": ["dir::../macros/tt_um_micro_gfg_development_nco.lef"],
+      "nl": ["dir::../macros/tt_um_micro_gfg_development_nco.v"]
     },
     "tt_um_micro_stub_4": {
       "instances": {
