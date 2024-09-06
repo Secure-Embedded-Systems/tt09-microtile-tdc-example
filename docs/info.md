@@ -7,13 +7,31 @@ You can also include images in this folder and reference them in the markdown. E
 512 kb in size, and the combined size of all images must be less than 1 MB.
 -->
 
-## How it works
-
-Combined 4 micro tile sized projects into a single Tiny Tapeout tile.
-
-## How to test
+### Selecting the active project
 
 Use uio[1:0] to select the active micro-tile project.
+
+## Project 0 - Test
+
+* Repo: https://github.com/TinyTapeout/tt-micro-tiles-experiment
+* Author: Uri Shaked
+* Description: Micro tiles test module
+
+### How it works
+
+The micro tiles test module is a simple module that demonstrates the use of the micro tile interface.
+
+It has two modes of operation:
+
+1. Mirroring the input pins to the output pins (when `rst_n` is low).
+3. Outputing a counter on the output pins and the bidirectional pins (when `rst_n` is high).
+
+The counter is an 8-bit counter that increments on every clock cycle, and resets when `rst_n` is low.
+
+### How to test
+
+1. Set `rst_n` low and observe that the input pins (`ui_in`) are output on the output pins (`uo_out`).
+2. Set `rst_n` high and observe that the counter is output on the output pins (`uo_out`).
 
 ## Project 1 - Wokwi Doodle
 
