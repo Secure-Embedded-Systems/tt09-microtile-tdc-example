@@ -79,3 +79,16 @@ This generated PDM datastream is output via `uo_out[7]`.
 Connect the audio Pmod to the output ports or any other low pass filter with a speaker to `uo_out[7]`. 
 Then configure the clock to a meaningfull frequency (e.g. 50 MHz for frequencies between 6 kHz and 24 Hz). 
 Finally set the `ui_in` pins to the desired frequency (= clk / $2^{21}$ * `ui_in`). After applying the reset, the sawtooth will be generated.
+
+## Project 3 - Micro Maze
+* Repo: https://github.com/htfab/micro-maze
+* Author: htfab
+* Description: A simple fixed maze game with 7-segment output
+
+## How it works
+
+The player can walk around the maze, showing the adjacent walls on the 7-segment display.
+
+## How to test
+
+Use the first four inputs to move up, down, left or right.

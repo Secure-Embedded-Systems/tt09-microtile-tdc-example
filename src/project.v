@@ -44,7 +44,7 @@ module tt_um_micro_tiles_container_group2 (
       .uo_out(uo_out_proj[2])
   );
 
-  tt_um_micro_stub_4 proj4 (
+  tt_um_htfab_micro_maze proj4 (
       .rst_n(sel == 3 ? rst_n : 1'b0),
       .clk(sel == 3 ? clk : 1'b0),
       .ui_in(sel == 3 ? ui_in : 8'h00),
