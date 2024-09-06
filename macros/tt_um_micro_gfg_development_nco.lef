@@ -140,7 +140,7 @@ MACRO tt_um_micro_gfg_development_nco
   PIN uo_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.795200 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met2 ;
         RECT 64.000 29.770 65.000 30.070 ;
@@ -203,7 +203,7 @@ MACRO tt_um_micro_gfg_development_nco
   PIN uo_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
+    ANTENNADIFFAREA 0.795200 ;
     PORT
       LAYER met2 ;
         RECT 64.000 48.810 65.000 49.110 ;
@@ -222,7 +222,7 @@ MACRO tt_um_micro_gfg_development_nco
       LAYER li1 ;
         RECT 2.760 2.635 62.100 46.325 ;
       LAYER met1 ;
-        RECT 2.760 1.060 64.790 46.480 ;
+        RECT 2.760 1.400 64.790 46.480 ;
       LAYER met2 ;
         RECT 5.160 48.530 63.720 48.810 ;
         RECT 5.160 46.760 64.760 48.530 ;
@@ -268,7 +268,7 @@ MACRO tt_um_micro_gfg_development_nco
         RECT 60.880 3.150 64.760 5.010 ;
         RECT 60.880 2.290 63.720 3.150 ;
         RECT 60.880 2.200 64.760 2.290 ;
-        RECT 5.160 1.030 64.760 2.200 ;
+        RECT 5.160 1.370 64.760 2.200 ;
   END
 END tt_um_micro_gfg_development_nco
 END LIBRARY
