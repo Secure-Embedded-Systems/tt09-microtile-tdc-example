@@ -81,16 +81,16 @@
       "lef": ["dir::../macros/tt_um_micro_gfg_development_nco.lef"],
       "nl": ["dir::../macros/tt_um_micro_gfg_development_nco.v"]
     },
-    "tt_um_micro_stub_4": {
+    "tt_um_htfab_micro_maze": {
       "instances": {
         "proj4": {
           "location": [86.6, 52],
           "orientation": "FN"
         }
       },
-      "gds": ["dir::../macros/tt_um_micro_stub_4.gds"],
-      "lef": ["dir::../macros/tt_um_micro_stub_4.lef"],
-      "nl": ["dir::../macros/tt_um_micro_stub_4.v"]
+      "gds": ["dir::../macros/tt_um_htfab_micro_maze.gds"],
+      "lef": ["dir::../macros/tt_um_htfab_micro_maze.lef"],
+      "nl": ["dir::../macros/tt_um_htfab_micro_maze.v"]
     }
   },
 
