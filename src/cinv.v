@@ -8,4 +8,5 @@ module cinv(input a,
    assign q = ~a;
 `endif
 
+
 endmodule
