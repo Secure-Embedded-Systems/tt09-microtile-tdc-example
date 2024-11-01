@@ -1,7 +1,8 @@
 `default_nettype none
 module tdc_delay #(parameter N_DELAY = 32) (
     input wire  rst_n,           // Active-low reset
-    input wire  clk,             // System clock
+    input wire delay_clk,         //delayed clk from sensor 
+    
     input wire  start,           // Start signal
     output wire [N_DELAY-1:0] time_count // Time difference (number of transitions)
 );
@@ -48,7 +49,7 @@ endgenerate
 
 
 
-always @(posedge clk or  posedge start) begin
+always @(posedge delay_clk) begin
     if (start) begin
         r_dly_store <= {N_DELAY{1'b0}};  // On rising edge of 'start', reset r_dly_store to 0
     end else begin
