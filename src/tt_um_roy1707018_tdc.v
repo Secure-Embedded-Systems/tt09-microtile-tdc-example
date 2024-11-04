@@ -12,7 +12,7 @@ module tt_um_roy1707018_tdc (
       .VPWR(vpwr),
       .VGND(vgnd),
 `endif
-    input  wire [7:0] ui_in,    // Dedicated inputs (we'll use ui_in[1:0] for mux control)
+    input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs (8-bit output of time count)
     input  wire       rst_n     // Active-low reset
 );
@@ -29,7 +29,7 @@ module tt_um_roy1707018_tdc (
     // Instantiate the tdc_delay module
     tdc_delay #(.N_DELAY(N_DELAY)) u_tdc_delay (
         .rst_n(rst_n),            // Active-low reset
-        .delay_clk(),                // System clock
+        .delay_clk(ui_in[1]),                // System clock
         .start(ui_in[0]),         // Start signal (ui_in[0] as start)
         .time_count(time_count)   // 32-bit output time count
     );
@@ -60,17 +60,6 @@ module tt_um_roy1707018_tdc (
 
     // Output the selected 8 bits to uo_out
     assign uo_out = selected_count;
-    assign uio_out = 0;
-    assign uio_oe = 0;
-
-
-  // List all unused inputs to prevent warnings
-  wire _unused = &{ena, uio_in, 1'b0};
-
-
-
-
-
-
+    
 
 endmodule
