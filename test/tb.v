@@ -16,7 +16,7 @@ module tb ();
   // Wire up the inputs and outputs:
   reg clk;
   reg rst_n;
-  //reg ena;
+  reg ena;
   reg [7:0] ui_in;
   //reg [7:0] uio_in;
   wire [7:0] uo_out;
@@ -38,6 +38,7 @@ module tb ();
       .VPWR(vpwr),    // Power supply
       .VGND(vgnd),    // Ground
     `endif
+      .ena(ena),
       .clk(clk),
       .ui_in  (ui_in),    // Dedicated inputs
       .uo_out (uo_out),   // Dedicated output

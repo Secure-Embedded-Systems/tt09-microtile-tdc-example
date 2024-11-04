@@ -15,7 +15,8 @@ module tt_um_roy1707018_tdc (
     input wire 		clk,     // clock
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs (8-bit output of time count)
-    input  wire       rst_n     // Active-low reset
+    input  wire       rst_n,     // Active-low reset
+    input wire 		ena     // always 1 when the design is powered, so you can ignore it
 );
 
 
