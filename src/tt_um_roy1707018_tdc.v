@@ -37,7 +37,7 @@ module tt_um_roy1707018_tdc (
     // Register time_count and select part of it to show on the output
 
     
-    always @(posedge clk or posedge rst_n) begin
+    always @(posedge ui_in[1] or posedge rst_n) begin
     if (rst_n) begin
         time_count_reg <= 32'b0;  // Reset time count register
     end else begin
