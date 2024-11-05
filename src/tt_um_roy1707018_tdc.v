@@ -15,11 +15,11 @@ module tt_um_roy1707018_tdc (
     input wire 		clk,     // clock
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs (8-bit output of time count)
-    input wire [7:0] 	uio_in,  // IOs: Input path
-    output wire [7:0] uio_out, // IOs: Output path
-    output wire [7:0] uio_oe,  // IOs: Enable path (active high: 0=input, 1=output)
+   // input wire [7:0] 	uio_in,  // IOs: Input path
+   // output wire [7:0] uio_out, // IOs: Output path
+   //	 output wire [7:0] uio_oe,  // IOs: Enable path (active high: 0=input, 1=output)
     input  wire       rst_n,     // Active-low reset
-    input wire 		ena     // always 1 when the design is powered, so you can ignore it
+   // input wire 		ena     // always 1 when the design is powered, so you can ignore it
 );
 
 
@@ -65,11 +65,11 @@ module tt_um_roy1707018_tdc (
 
     // Output the selected 8 bits to uo_out
     assign uo_out = selected_count;
-     assign uio_out = 7'b0;
-   assign uio_oe  = 7'b0;
+    // assign uio_out = 7'b0;
+  // assign uio_oe  = 7'b0;
 
   // List all unused inputs to prevent warnings
-  wire _unused = &{ena, ui_in[7:6], uio_in[7:0], 1'b0};    
+ // wire _unused = &{ena, ui_in[7:6], uio_in[7:0], 1'b0};    
 
 
 endmodule
