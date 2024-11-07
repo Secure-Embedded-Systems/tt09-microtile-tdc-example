@@ -34,7 +34,7 @@ module tt_um_roy1707018_tdc (
     // Instantiate the tdc_delay module
     tdc_delay #(.N_DELAY(N_DELAY)) u_tdc_delay (
         .rst_n(rst_n),            // Active-low reset
-        .delay_clk(ui_in[1]),                // System clock
+        .delay_clk(clk),                // System clock
         .start(ui_in[0]),         // Start signal (ui_in[0] as start)
         .time_count(time_count)   // 32-bit output time count
     );
@@ -43,7 +43,7 @@ module tt_um_roy1707018_tdc (
     // 4-to-1 MUX to select which 8-bit section of time_count to output
     // 2-to-1 MUX to select which 8-bit section of time_count to output
     always @(*) begin
-      case (ui_in[3])           // Use ui_in[3] to select part of the 16-bit time_count
+      case (ui_in[1])           // Use ui_in[3] to select part of the 16-bit time_count
         1'b0: selected_count = time_count[7:0];    // Lower 8 bits
         1'b1: selected_count = time_count[15:8];   // Upper 8 bits
         default: selected_count = 8'b0;
